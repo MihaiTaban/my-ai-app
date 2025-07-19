@@ -82,7 +82,7 @@
             // In a real-world production application, you should NEVER expose your API key directly in client-side code.
             // Instead, you would proxy requests through a secure backend server to protect your API key.
             // For this local development project, we are doing it client-side for simplicity and to demonstrate the API call.
-            const API_KEY = ""; // Canvas will inject this at runtime for Gemini API calls
+            const API_KEY = "AIzaSyDGzd5lDIdzPx4CA8JwaYDjBl14B0SkQnY"; // Canvas will inject this at runtime for Gemini API calls
             const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
             function showMessage(message, isError = false) {
