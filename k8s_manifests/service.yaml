@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: my-ai-app-service
   labels:
-	app: my-ai-app
+    app: my-ai-app
 spec:
   selector:
-	app: my-ai-app
+    app: my-ai-app
   ports:
-	- protocol: TCP
-	  port: 80         # Service listens on port 80
-	  targetPort: 80   # Forwards traffic to container's port 80
+    - protocol: TCP
+      port: 80         # Service listens on port 80
+      targetPort: 80   # Forwards traffic to container's port 80
   type: NodePort       # Expose service on a port on the node
